@@ -347,9 +347,12 @@ img {
   padding-bottom: 94px;
 }
 .text-work {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
   color: var(--primery-text-white);
   background: rgba(47, 48, 58, 0.8);
-  border-radius: 0px 0px 4px 4px;
 
   width: 370px;
   height: 70px;
@@ -389,6 +392,10 @@ img {
 .section-three .container {
   padding-bottom: 94px;
   padding-top: 94px;
+}
+
+.position {
+  position: relative;
 }
 
 /* our team */
