@@ -132,7 +132,7 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 
-.page-header {
+.header-portfolio {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
@@ -191,19 +191,6 @@ img {
   margin-right: 10px;
 }
 
-/* .number-nav::before {
-  content: '';
-
-  margin-right: 10px;
-}
-
-.mail-icon::before {
-
-
-  background-image: url(../images/mail.svg);
-}
-*/
-
 .list-number {
   display: flex;
 }
@@ -217,6 +204,19 @@ img {
 
 .current {
   color: var(--acent-text-color);
+}
+.current::after {
+  position: absolute;
+  bottom: 0;
+
+  content: '';
+  display: block;
+
+  background-color: var(--acent-text-color);
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
 }
 
 /* flex */
