@@ -851,7 +851,8 @@ img {
 .position {
   overflow: hidden;
 }
-.flex-li:hover .overlay {
+.general-a:hover .overlay,
+.general-a:focus .overlay {
   transform: translateY(0);
 }
 
