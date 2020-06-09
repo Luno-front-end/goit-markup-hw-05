@@ -17,6 +17,7 @@
   --footer-year: rgba(255, 255, 255, 0.4);
   --bg-footer: #2f303a;
   --incogniti-gb-card-portfolio: rgba(33, 150, 243, 0.9);
+  --icon-current-color: #afb1b8;
 }
 /* .chec {
   outline: 1px solid tomato;
@@ -154,6 +155,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   outline: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .number-nav {
   display: flex;
@@ -165,32 +168,45 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   outline: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.phone-icon {
+  fill: var(--connection);
+  width: 10px;
+  height: 14.94px;
+
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-icon {
+  fill: var(--connection);
+  width: 16px;
+  height: 11.2px;
+
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .general-nav:hover,
 .general-nav:focus,
 .number-nav:hover,
 .number-nav:focus {
   color: var(--acent-text-color);
-  --color5: var(--acent-text-color);
-  --color2: var(--acent-text-color);
 }
 
-.phone-icon {
-  fill: currentColor;
-  width: 10px;
-  height: 14.94px;
-
-  margin-right: 10px;
+.number-nav:hover .phone-icon {
+  fill: var(--acent-text-color);
 }
-.mail-icon {
-  fill: currentColor;
-  width: 16px;
-  height: 11.2px;
-
-  margin-right: 10px;
+.number-nav:focus .phone-icon {
+  fill: var(--acent-text-color);
 }
-
+.number-nav:hover .mail-icon {
+  fill: var(--acent-text-color);
+}
+.number-nav:focus .mail-icon {
+  fill: var(--acent-text-color);
+}
 .list-number {
   display: flex;
 }
@@ -439,47 +455,71 @@ img {
 .social-box {
   display: flex;
   align-items: center;
-  /* padding-left: 12px; */
   background-color: var(--primery-text-white);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instagram {
-  fill: currentColor;
+  fill: var(--icon-current-color);
   width: 20px;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .twitter {
-  fill: currentColor;
+  fill: var(--icon-current-color);
   width: 20px;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .facebook {
-  fill: currentColor;
+  fill: var(--icon-current-color);
   width: 20px;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .linkedin {
-  fill: currentColor;
+  fill: var(--icon-current-color);
   width: 20px;
   height: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-box:hover,
 .social-box:focus {
   background-color: var(--acent-text-color);
-  --color3: var(--primery-text-white);
-  --color4: var(--primery-text-white);
+}
+
+.social-box:hover .instagram,
+.social-box:focus .instagram {
+  fill: var(--primery-text-white);
+}
+.social-box:hover .twitter,
+.social-box:focus .twitter {
+  fill: var(--primery-text-white);
+}
+.social-box:hover .facebook,
+.social-box:focus .facebook {
+  fill: var(--primery-text-white);
+}
+
+.social-box:hover .linkedin,
+.social-box:focus .linkedin {
+  fill: var(--primery-text-white);
 }
 
 /* Company  */
@@ -497,65 +537,103 @@ img {
   border: 1px solid #afb1b8;
   outline: none;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-border:hover,
 .company-border:focus {
   border-color: var(--acent-text-color);
-  --color3: var(--acent-text-color);
 }
+.company-border:hover .logo-one,
+.company-border:focus .logo-one {
+  fill: var(--acent-text-color);
+}
+.company-border:hover .logo-two,
+.company-border:focus .logo-two {
+  fill: var(--acent-text-color);
+}
+.company-border:hover .logo-three,
+.company-border:focus .logo-three {
+  fill: var(--acent-text-color);
+}
+.company-border:hover .logo-four,
+.company-border:focus .logo-four {
+  fill: var(--acent-text-color);
+}
+.company-border:hover .logo-five,
+.company-border:focus .logo-five {
+  fill: var(--acent-text-color);
+}
+.company-border:hover .logo-six,
+.company-border:focus .logo-six {
+  fill: var(--acent-text-color);
+}
+
 .logo-one {
-  fill: currentColor;
+  fill: var(--icon-current-color);
   width: 44.27px;
   height: 49.23px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-two {
-  fill: currentColor;
+  fill: var(--icon-current-color);
 
   width: 40px;
   height: 52px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-three {
-  fill: currentColor;
+  fill: var(--icon-current-color);
 
   width: 41px;
   height: 42.6px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-four {
-  fill: currentColor;
+  fill: var(--icon-current-color);
 
   width: 79.66px;
   height: 42.02px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-five {
-  fill: currentColor;
+  fill: var(--icon-current-color);
 
   width: 59px;
   height: 47px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-six {
-  fill: currentColor;
+  fill: var(--icon-current-color);
 
   width: 88.48px;
   height: 45.44px;
 
   margin-right: auto;
   margin-left: auto;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company {
@@ -646,6 +724,8 @@ img {
 
   border-radius: 50%;
   outline: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fsocial-box:hover,
 .fsocial-box:focus {
@@ -778,7 +858,11 @@ img {
   font-size: 16px;
   line-height: 1.62;
 
+  box-shadow: none;
   outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-m:not(:last-child) {
   margin-right: 8px;
@@ -896,7 +980,10 @@ img {
 .flex-li .general-a {
   display: block;
   outline: none;
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .flex-li .general-a:hover,
 .flex-li .general-a:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
